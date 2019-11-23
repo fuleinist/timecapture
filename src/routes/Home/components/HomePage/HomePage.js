@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import {
-  ACCOUNT_PATH,
+  ACCOUNTS_PATH,
   LIST_PATH,
   LOGIN_PATH,
   SIGNUP_PATH
@@ -52,7 +52,7 @@ function Home({ classes }) {
               <Link to={LIST_PATH}>Projects</Link>
             </li>
             <li>
-              <Link to={ACCOUNT_PATH}>Account</Link>
+              <Link to={ACCOUNTS_PATH}>Account</Link>
             </li>
           </ul>
         </div>
@@ -87,7 +87,7 @@ function Home({ classes }) {
             </div>
           </div>
           <span>The following routes use redux-form:</span>
-          <Link to={ACCOUNT_PATH}>
+          <Link to={ACCOUNTS_PATH}>
             <p>Account Page</p>
           </Link>
         </div>

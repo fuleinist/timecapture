@@ -4,20 +4,25 @@ import CoreLayout from '../layouts/CoreLayout'
 import Home from './Home'
 import LoginRoute from './Login'
 import SignupRoute from './Signup'
-import CarsRoute from './Cars'
+import JobsRoute from './Jobs'
+import UserRoute from './Users'
+import LogsRoute from './Logs'
 import ProjectsRoute from './Projects'
-import AccountRoute from './Account'
+import AccountsRoute from './Accounts'
 import NotFoundRoute from './NotFound'
 
 export default function createRoutes(store) {
+  console.log(store)
   return (
     <CoreLayout>
       <Switch>
         <Route exact path={Home.path} component={() => <Home.component />} />
         {/* Build Route components from routeSettings */
         [
-          AccountRoute,
-          CarsRoute,
+          AccountsRoute,
+          JobsRoute,
+          UserRoute,
+          LogsRoute,
           ProjectsRoute,
           SignupRoute,
           LoginRoute

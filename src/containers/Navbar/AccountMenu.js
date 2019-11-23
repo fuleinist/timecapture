@@ -5,7 +5,7 @@ import MenuItem from '@material-ui/core/MenuItem'
 import IconButton from '@material-ui/core/IconButton'
 import AccountCircle from '@material-ui/icons/AccountCircle'
 import { makeStyles } from '@material-ui/core/styles'
-import { ACCOUNT_PATH } from 'constants/paths'
+import { ACCOUNTS_PATH } from 'constants/paths'
 import enhance from './Navbar.enhancer'
 
 const useStyles = makeStyles(() => ({
@@ -31,7 +31,7 @@ function AccountMenu({ firebase, history }) {
     })
   }
   function goToAccount() {
-    history.push(ACCOUNT_PATH)
+    history.push(ACCOUNTS_PATH)
     closeAccountMenu()
   }
 

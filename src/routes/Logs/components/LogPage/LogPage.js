@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import classes from './LogPage.scss'
 
 function LogPage({ log }) {
+  const classes = {};
   return (
     <div className={classes.container}>
       <span>LogPage Component</span>

@@ -7,6 +7,7 @@ export default compose(
   // Add handlers as props
   withHandlers({
     onSubmit: props => formValues => {
+      console.log('prop values:', props)
       console.log('form values:', formValues) // eslint-disable-line no-console
     }
   }),
