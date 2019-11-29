@@ -1,17 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Button from '@material-ui/core/Button'
-import Dialog from '@material-ui/core/Dialog'
-import DialogTitle from '@material-ui/core/DialogTitle'
-import DialogActions from '@material-ui/core/DialogActions'
-import DialogContent from '@material-ui/core/DialogContent'
-import { Field } from 'redux-form'
-import TextField from 'components/FormTextField'
-import { required } from 'utils/form'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import { Field } from 'redux-form';
+import TextField from 'components/FormTextField';
+import { required } from 'utils/form';
 
 function NewProjectDialog(props) {
-  const { classes, handleSubmit, open, onRequestClose } = props;
-  console.log(props)
+  const {
+    classes, handleSubmit, open, onRequestClose,
+  } = props;
+  console.log(props);
   return (
     <Dialog open={open} onClose={onRequestClose}>
       <DialogTitle id="new-project-dialog-title">New Project</DialogTitle>
@@ -34,14 +36,14 @@ function NewProjectDialog(props) {
         </DialogActions>
       </form>
     </Dialog>
-  )
+  );
 }
 
 NewProjectDialog.propTypes = {
   classes: PropTypes.object.isRequired, // from enhancer (withStyles)
   handleSubmit: PropTypes.func.isRequired, // from enhancer (reduxForm)
   open: PropTypes.bool.isRequired,
-  onRequestClose: PropTypes.func.isRequired
-}
+  onRequestClose: PropTypes.func.isRequired,
+};
 
-export default NewProjectDialog
+export default NewProjectDialog;

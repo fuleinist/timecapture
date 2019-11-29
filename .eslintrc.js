@@ -4,6 +4,7 @@ module.exports = {
         "es6": true
     },
     "extends": [
+        "airbnb",
         "eslint:recommended",
         "plugin:react/recommended"
     ],
@@ -22,5 +23,6 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "react/forbid-prop-types": [0]
     }
 };
