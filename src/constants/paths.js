@@ -1,0 +1,7 @@
+export const PROJECTS_PATH = '/projects'
+export const JOBS_PATH = '/jobs'
+export const LOGS_PATH = '/logs'
+export const USERS_PATH = '/users'
+export const ACCOUNTS_PATH = '/accounts'
+export const LOGIN_PATH = '/login'
+export const SIGNUP_PATH = '/signup'
