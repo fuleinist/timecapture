@@ -1,4 +1,4 @@
-import JobPage from './JobPage'
-import enhance from './JobPage.enhancer'
+import JobPage from './JobsPage'
+import enhance from './JobsPage.enhancer'
 
 export default enhance(JobPage)

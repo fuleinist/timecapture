@@ -5,7 +5,7 @@ import Home from './Home'
 import LoginRoute from './Login'
 import SignupRoute from './Signup'
 import JobsRoute from './Jobs'
-import UserRoute from './Users'
+import UsersRoute from './Users'
 import LogsRoute from './Logs'
 import ProjectsRoute from './Projects'
 import AccountsRoute from './Accounts'
@@ -21,7 +21,7 @@ export default function createRoutes(store) {
         [
           AccountsRoute,
           JobsRoute,
-          UserRoute,
+          UsersRoute,
           LogsRoute,
           ProjectsRoute,
           SignupRoute,

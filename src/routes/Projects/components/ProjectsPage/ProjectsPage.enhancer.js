@@ -6,7 +6,7 @@ import firestoreConnect from 'react-redux-firebase/lib/firestoreConnect'
 import { withNotifications } from 'modules/notification'
 import { spinnerWhileLoading } from 'utils/components'
 import { UserIsAuthenticated } from 'utils/router'
-import { LIST_PATH } from 'constants/paths'
+import { PROJECTS_PATH } from 'constants/paths'
 
 export default compose(
   // Set component display name (more clear in dev/error tools)
@@ -86,7 +86,7 @@ export default compose(
         })
     },
     goToProject: ({ history }) => projectId => {
-      history.push(`${LIST_PATH}/${projectId}`)
+      history.push(`${PROJECTS_PATH}/${projectId}`)
     }
   })
 )

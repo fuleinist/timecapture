@@ -1,4 +1,4 @@
-export const LIST_PATH = '/projects'
+export const PROJECTS_PATH = '/projects'
 export const JOBS_PATH = '/jobs'
 export const LOGS_PATH = '/logs'
 export const USERS_PATH = '/users'

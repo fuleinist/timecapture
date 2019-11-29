@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import {
   ACCOUNTS_PATH,
-  LIST_PATH,
+  PROJECTS_PATH,
   LOGIN_PATH,
   SIGNUP_PATH
 } from 'constants/paths'
@@ -49,7 +49,7 @@ function Home({ classes }) {
           </span>
           <ul>
             <li>
-              <Link to={LIST_PATH}>Projects</Link>
+              <Link to={PROJECTS_PATH}>Projects</Link>
             </li>
             <li>
               <Link to={ACCOUNTS_PATH}>Account</Link>

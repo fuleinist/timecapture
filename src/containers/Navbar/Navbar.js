@@ -6,7 +6,7 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 import { makeStyles } from '@material-ui/core/styles'
-import { LIST_PATH, LOGIN_PATH } from 'constants/paths'
+import { PROJECTS_PATH, LOGIN_PATH } from 'constants/paths'
 import { isLoaded, isEmpty } from 'react-redux-firebase/lib/helpers'
 import AccountMenu from './AccountMenu'
 import styles from './Navbar.styles'
@@ -24,7 +24,7 @@ function Navbar({ history, firebase, auth, profile }) {
           color="inherit"
           variant="h6"
           component={Link}
-          to={authExists ? LIST_PATH : '/'}
+          to={authExists ? PROJECTS_PATH : '/'}
           className={classes.brand}
           data-test="brand">
           react-fb

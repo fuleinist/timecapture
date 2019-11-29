@@ -9,7 +9,9 @@ import { Field } from 'redux-form'
 import TextField from 'components/FormTextField'
 import { required } from 'utils/form'
 
-function NewProjectDialog({ classes, handleSubmit, open, onRequestClose }) {
+function NewProjectDialog(props) {
+  const { classes, handleSubmit, open, onRequestClose } = props;
+  console.log(props)
   return (
     <Dialog open={open} onClose={onRequestClose}>
       <DialogTitle id="new-project-dialog-title">New Project</DialogTitle>
